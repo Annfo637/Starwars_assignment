@@ -1,0 +1,88 @@
+.content {
+  min-height: calc(100vh - 200px);
+}
+
+.search {
+  background-color: $dark--transparent;
+  color: $light;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 5px;
+  width: 320px;
+  @media (min-width: 600px) {
+    width: 500px;
+  }
+  margin-top: 0.5em;
+  @media (min-width: 500px) {
+    margin-top: 1em;
+  }
+  &__header {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &__text {
+    font-style: italic;
+    font-size: 18px;
+  }
+  &__input {
+    height: 30px;
+    width: 250px;
+    font-size: 16px;
+  }
+}
+
+.instruction {
+  background-color: $dark--transparent;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 5px;
+  width: 320px;
+  @media (min-width: 600px) {
+    width: 500px;
+  }
+  color: $complement;
+  margin-top: 0.5em;
+  @media (min-width: 500px) {
+    margin-top: 1em;
+  }
+}
+
+.characters__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em;
+  @media (min-width: 500px) {
+    margin: 1.5em;
+  }
+}
+
+.character {
+  display: inline-block;
+  background-color: $light;
+  border: solid 1px $medium;
+  border-radius: 5px;
+  box-shadow: 3px 5px 2px 1px $medium;
+  margin: 10px;
+  padding: 10px;
+  min-height: 70px;
+  width: 200px;
+  &__name {
+    font-weight: bold;
+    font-size: 20px;
+    &:hover {
+      color: $hover;
+      cursor: pointer;
+    }
+  }
+  &__props {
+    padding-top: 10px;
+    text-align: left;
+  }
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,16 @@
+/* colors and gradients */
+
+$dark: rgb(31, 33, 34);
+$dark--transparent: rgba(31, 33, 34, 0.7);
+$light: whitesmoke;
+$medium: lightslategray;
+$complement: orange;
+$hover: rgb(166, 105, 179);
+
+$gradient: linear-gradient(to bottom, rgb(31, 33, 34), rgba(107, 15, 119, 0.5));
+
+$gradient--reverse: linear-gradient(
+  to bottom,
+  rgba(107, 15, 119, 0.5),
+  rgb(31, 33, 34)
+);

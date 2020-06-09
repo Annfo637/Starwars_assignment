@@ -1,0 +1,167 @@
+/* colors and gradients */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+  color: #1f2122;
+  text-align: center;
+  background-image: url(lobster-nebula.jpg);
+  background-size: contain;
+}
+
+.hero {
+  min-height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1f2122), to(rgba(107, 15, 119, 0.5)));
+  background: linear-gradient(to bottom, #1f2122, rgba(107, 15, 119, 0.5));
+  color: whitesmoke;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+@media (min-width: 580px) {
+  .hero {
+    font-size: 24px;
+  }
+}
+
+footer {
+  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(107, 15, 119, 0.5)), to(#1f2122));
+  background: linear-gradient(to bottom, rgba(107, 15, 119, 0.5), #1f2122);
+  color: whitesmoke;
+  font-size: 16px;
+}
+
+@media (min-width: 500px) {
+  footer {
+    font-size: 20px;
+  }
+}
+
+.content {
+  min-height: calc(100vh - 200px);
+}
+
+.search {
+  background-color: rgba(31, 33, 34, 0.7);
+  color: whitesmoke;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 5px;
+  width: 320px;
+  margin-top: 0.5em;
+}
+
+@media (min-width: 600px) {
+  .search {
+    width: 500px;
+  }
+}
+
+@media (min-width: 500px) {
+  .search {
+    margin-top: 1em;
+  }
+}
+
+.search__header {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.search__text {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.search__input {
+  height: 30px;
+  width: 250px;
+  font-size: 16px;
+}
+
+.instruction {
+  background-color: rgba(31, 33, 34, 0.7);
+  display: inline-block;
+  padding: 15px;
+  border-radius: 5px;
+  width: 320px;
+  color: orange;
+  margin-top: 0.5em;
+}
+
+@media (min-width: 600px) {
+  .instruction {
+    width: 500px;
+  }
+}
+
+@media (min-width: 500px) {
+  .instruction {
+    margin-top: 1em;
+  }
+}
+
+.characters__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.5em;
+}
+
+@media (min-width: 500px) {
+  .characters__container {
+    margin: 1.5em;
+  }
+}
+
+.character {
+  display: inline-block;
+  background-color: whitesmoke;
+  border: solid 1px lightslategray;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 5px 2px 1px lightslategray;
+          box-shadow: 3px 5px 2px 1px lightslategray;
+  margin: 10px;
+  padding: 10px;
+  min-height: 70px;
+  width: 200px;
+}
+
+.character__name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.character__name:hover {
+  color: #a669b3;
+  cursor: pointer;
+}
+
+.character__props {
+  padding-top: 10px;
+  text-align: left;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
